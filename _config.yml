@@ -6,7 +6,7 @@ encoding: UTF-8
 # Optional features
 animated:             true
 show_related_posts:   true
-show_post_footers:    true
+show_post_footers:    false
 show_social_icons:    true
 ajaxify_contact_form: true
 enable_mathjax: true
@@ -44,7 +44,7 @@ paypal_url:
 flattr_button:
 
 # Post sharing icons
-show_sharing_icons: true
+show_sharing_icons: false
 # Change to 'true' to enable individual icons
 share_facebook: true
 share_twitter: true
