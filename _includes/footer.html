@@ -1,21 +1,15 @@
-<!--
-  ~ 版权所有.(c)2008-2017. 卡尔科技工作室
-  -->
 
+{% if site.enable_anchorjs %}<!-- AnchorJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.0.0/anchor.min.js"></script>
+<script>
+    anchors.options.visible = 'always';
+    anchors.add('article h2, article h3, article h4, article h5, article h6');
+</script>{% endif %}
 <footer class="center">
-    <div class="container-lg p-responsive py-4 ">
-        <div class="d-flex flex-justify-between">
-            <ul class="list-style-none float-right text-small">
-                <li class="d-inline-block ml-lg-2"><a href="huang.wenbin@foxmail.com">联系我们</a></li>
-            </ul>
-
-
-            <ul class="list-style-none float-left text-small">
-                <li class="d-inline-block mr-lg-2"><a href="https://github.com/laomazi2006">GitHub</a></li>
-                <li class="d-none d-lg-inline-block mr-lg-2"><a href="/">关于</a></li>
-            </ul>
-        </div>
-
+    <div class="measure">
         <p class="border-top text-center f5 mt-4 pt-4">&copy; 2016 - {{ site.time | date: '%Y' }} <span>卡尔科技工作室</span>, Inc. and contributors</p>
+
     </div>
+
+
 </footer>
