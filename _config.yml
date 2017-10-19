@@ -4,97 +4,68 @@ theme: jekyll-theme-architect
 encoding: UTF-8
 
 
-# build settings
-exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json"]
-markdown: kramdown
-plugins:
-  - jekyll-avatar
-  - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-coffeescript
-  - jekyll-sitemap
-  - jekyll-octicons
+text:
+  pagination:
+    newer: '上一页'
+    older: '下一页'
+  share_buttons:
+    text:         'Share this post!'
+    facebook:     'Share on Facebook'
+    twitter:      'Share on Twitter'
+    googleplus:   'Share on Google+'
+    linkedin:     'Share on LinkedIn'
+    digg:         'Share on Digg'
+    tumblr:       'Share on Tumblr'
+    reddit:       'Share on Reddit'
+    stumbleupon:  'Share on StumbleUpon'
+    hackernews:   'Share on Hacker News'
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+  index:
+    coming_soon: 'Coming soon...'
+  contact:
+    email:    'Email Address'
+    content:  'What would you like to say?'
+    subject:  'New submission!'
+    submit:   'Say Hello'
+    ajax:
+      sending:  'sending..'
+      sent:     'Message sent!'
+      error:    'Error!'
+  thanks: 'Thanks for contacting us. We will reply as soon as possible.'
+  og_locale: 'en_US'
 
+# Build settings
+markdown:     kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     8
+start_line: 1
 sass:
-  style: :compressed
-  # Where you keep your scss files
-  sass_dir: assets/css/
-  # Where sass should look for other scss
-  load_paths:
-    - node_modules/
+  compressed: true
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+# https://github.com/jekyll/jekyll/issues/2938
+exclude: [vendor]
 
-# orgs on front page
-featured_orgs:
-  - gcba
-  - nla
-  - GeoscienceAustralia
-  - qld-gov-au
-  - onroerenderfgoed
-  - geobolivia
-  - dadosgovbr
-  - tisorocaba
-  - canada-ca
-  - wet-boew
-  - e-gob
-  - City-of-Helsinki
-  - itschool
-  - linz
-  - govph
-  - commonwealth-of-puerto-rico
-  - The-Municipality-of-Staffanstorp
-  - malmostad
-  - ogdch
-  - alv-ch
-  - city-of-bloomington
-  - cityofchattanooga
-  - cityofnewyork
-  - Honolulu
-  - mnhrc
-  - NYCComptroller
-  - ArlingtonCounty
-  - sfcta
-  - olcf
-  - ORNL
-  - azgs
-  - nysenate
-  - State-of-Arizona
-  - alphagov
-  - BarnsleyCouncil
-  - BristolCityCouncil
-  - cabinetoffice
-  - datagovuk
-  - dfid
-  - east-sussex-county-council
-  - hmrc
-  - MetOffice
-  - 18f
-  - CA-CST-SII
-  - cfpb
-  - cooperhewitt
-  - erdc-cm
-  - fda
-  - gsa
-  - hhs
-  - nasa
-  - USDeptVeteransAffairs
-  - virtual-world-framework
-  - whitehouse
-  - bundestag
-  - CodeandoMexico
-  - codeforeurope
-  - dataviz
-  - dobtco
-  - KoelnAPI
-  - mysociety
-  - openva
-  - postcode
-  - sunlightlabs
-  - theodi
-  - codeforamerica
-  - codeforaustralia
-  - okfngr
-  - okfn
-  - nuknightlab
-  - dssg
-  - codeforboston
-  - teampopong
+tipue_search:
+  include:
+    pages: true
