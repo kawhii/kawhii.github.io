@@ -74,7 +74,7 @@ text:
   post:
     updated:        'Updated'
     minute_read:    'minute read'
-    related_posts:  'Related Posts'
+    related_posts:  '相关文章'
   index:
     coming_soon: 'Coming soon...'
   contact:
@@ -87,7 +87,7 @@ text:
       sent:     'Message sent!'
       error:    'Error!'
   thanks: 'Thanks for contacting us. We will reply as soon as possible.'
-  og_locale: 'en_US'
+  og_locale: 'zh_CN'
 
 # Build settings
 markdown:     kramdown
