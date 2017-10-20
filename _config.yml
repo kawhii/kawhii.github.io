@@ -7,7 +7,7 @@ encoding: UTF-8
 animated:             true
 show_related_posts:   true
 show_post_footers:    false
-show_social_icons:    true
+show_social_icons:    false
 ajaxify_contact_form: true
 enable_mathjax: true
 extended_fonts: true
