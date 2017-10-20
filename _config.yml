@@ -2,6 +2,9 @@ title: Kawhi Carl
 email: huang.wenbin@foxmail.com
 theme: jekyll-theme-architect
 encoding: UTF-8
+baseurl:     "https://laomazi2006.github.io"
+date_format: "%b %-d, %Y"
+url:         "https://laomazi2006.github.io"
 
 # Optional features
 animated:             true
