@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      SSO校验码特效
+title:      SSO校验码特性
 summary:    注册时发送邮件校验码
 tags:       [Blog]
 ---
