@@ -13,5 +13,5 @@ tags:       [Blog]
 docker 快速运行
 
 ```cmd
-docker run -d --restart=always kawhii/sso -p 8443:8443
+docker run -d --restart=always -p 8443:8443 kawhii/sso 
 ```
